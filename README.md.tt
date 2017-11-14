@@ -1,0 +1,36 @@
+# <%=config[:constant_name]%>
+
+TODO: Describe your project
+
+
+## Installation
+
+You can install this program by
+
+```
+$  pip install .
+```
+
+Configure the below env variables:
+```
+export PYTHON_APP_username=''
+export PYTHON_APP_password=''
+```
+
+
+## Usage
+
+TODO:
+
+```
+$  <%=config[:namespaced_path]%>
+```
+
+
+This project can be consumed as a python library...
+
+```
+import <%=config[:namespaced_path]%>
+
+<%=config[:namespaced_path]%>.todo_name_function()
+```

@@ -1,0 +1,31 @@
+#!/usr/bin/env python
+"""
+TODO: Write some description of the program...
+"""
+
+# Debugging
+import pdb
+import traceback
+
+# Built-in dependencies
+import os
+import sys
+
+# Local scripts
+from config_helper import lookup_env_variables
+
+username, password = lookup_env_variables()
+
+
+def main():
+    print("Put your code here...")
+
+    # Useful debugging instructions
+    pdb.set_trace()
+    dir(os)
+    dict(os)
+
+
+if __name__ == "__main__":
+    main()
+

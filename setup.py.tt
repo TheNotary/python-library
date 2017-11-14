@@ -1,0 +1,18 @@
+from setuptools import setup
+
+setup(name='<%=config[:name]%>',
+      version='0.1',
+      description='',
+      url='https://github.com/<%=config[:author]%>/<%=config[:name]%>',
+      author='<%=config[:author]%>',
+      author_email='<%=config[:email]%>',
+      license='MIT',
+      packages=['<%=config[:name]%>'],
+      install_requires=[
+          'scapy',
+      ],
+      scripts=['bin/<%=config[:name]%>'],
+      test_suite='nose.collector',
+      tests_require=['nose'],
+      zip_safe=False)
+
