@@ -12,20 +12,25 @@ import os
 import sys
 
 # Local scripts
-from config_helper import lookup_env_variables
+from <%=config[:name]%>.config_helper import lookup_env_variables
+from <%=config[:name]%>.sayer import Sayer
 
 username, password = lookup_env_variables()
 
-
+# This is the main entrypoint of the project defined by setup.py
+# which will be invoked when the user runs `<%=config[:name]%>` from the command line
+# following installation.
 def main():
-    print("Put your code here...")
+    username, password = lookup_env_variables()
+
+    sayer = Sayer(greeting = "Sup")
+    print( sayer.say_hi() + " " + username + "!" )
 
     # Useful debugging instructions
-    pdb.set_trace()
+    # pdb.set_trace()
     dir(os)
-    dict(os)
 
-
+# Here's python boilerplate for running the main function only when this script is run directly
+# (i.e. not when it's imported as a library)
 if __name__ == "__main__":
     main()
-
