@@ -1,3 +1,5 @@
+import sys
+sys.path.append('../<%=config[:name]%>')
 from unittest import TestCase
 
 from <%=config[:name]%>.sayer import Sayer

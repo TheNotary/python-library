@@ -1,36 +1,12 @@
-#!/usr/bin/env python
+# TODO: Correct this description of the program
 """
-TODO: Write some description of the program...
+Some module for Python
+==================================
+
+<%=config[:name]%> is a Python module integrating classical machine
+things in the tightly-knit world of Python packages.
+
+See https://example.com for complete documentation.
 """
 
-# Debugging
-import pdb
-import traceback
-
-# Built-in dependencies
-import os
-import sys
-
-# Local scripts
-from <%=config[:name]%>.config_helper import lookup_env_variables
-from <%=config[:name]%>.sayer import Sayer
-
-username, password = lookup_env_variables()
-
-# This is the main entrypoint of the project defined by setup.py
-# which will be invoked when the user runs `<%=config[:name]%>` from the command line
-# following installation.
-def main():
-    username, password = lookup_env_variables()
-
-    sayer = Sayer(greeting = "Sup")
-    print( sayer.say_hi() + " " + username + "!" )
-
-    # Useful debugging instructions
-    # pdb.set_trace()
-    dir(os)
-
-# Here's python boilerplate for running the main function only when this script is run directly
-# (i.e. not when it's imported as a library)
-if __name__ == "__main__":
-    main()
+from .main import main

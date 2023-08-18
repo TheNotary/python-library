@@ -25,6 +25,14 @@ Because there's a setup.py file, you could instead run this command and delete t
 pip install -e .
 ```
 
+
+## Run Tests
+
+```bash
+pytest
+```
+
+
 ## End-User Installation and Configuration of Program
 
 You can install this program locally which includes a cli named <%=config[:name]%> by
@@ -36,8 +44,8 @@ pip install .
 Configure the below env variables:
 
 ```bash
-export PYTHON_APP_username=''
-export PYTHON_APP_password=''
+export PYTHON_APP_USERNAME=''
+export PYTHON_APP_PASSWORD=''
 ```
 
 
