@@ -1,10 +1,13 @@
 from unittest import TestCase
 
-import <%=config[:constant_name]%>
+from <%=config[:name]%>.sayer import Sayer
+
 
 class TestApp(TestCase):
     def test_my_number_is_what_i_think_it_will_be(self):
-        my_number = 2
-        self.assertTrue(isinstance(my_number, int))
-        self.assertEqual(my_number, 2)
+        expected_output = "Hi"
+        sayer = Sayer()
+        actual_output = sayer.say_hi()
 
+        self.assertEqual(actual_output, expected_output)
+        self.assertTrue(isinstance(actual_output, str))
