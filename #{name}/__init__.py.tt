@@ -9,4 +9,6 @@ things in the tightly-knit world of Python packages.
 See https://example.com for complete documentation.
 """
 
-from .main import main
+# This patterns of defining the import can't be followed if you want
+# to invoke the project on the CLI via python -m <%=config[:name]%>.main
+# from .main import main

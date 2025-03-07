@@ -33,6 +33,13 @@ pytest
 ```
 
 
+## Run the Python Module
+
+```bash
+python -m hello.main
+```
+
+
 ## End-User Installation and Configuration of Program
 
 You can install this program locally which includes a cli named <%=config[:name]%> by
