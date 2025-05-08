@@ -9,13 +9,12 @@ setup(name='<%=config[:name]%>',
     license='MIT',
     packages=find_packages(),
     install_requires=[
-        'nose'
+        'pytest' # change to something useful
     ],
     entry_points={
         'console_scripts': [
-            '<%=config[:name]%>=<%=config[:underscored_name]%>:main',
+            '<%=config[:name]%>=<%=config[:underscored_name]%>.main:main',
         ],
     },
-    test_suite='nose.collector',
-    tests_require=['nose'],
+    tests_require=['pytest'], # This appears to be unnecessary in 2025
     zip_safe=False)

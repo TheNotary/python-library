@@ -3,12 +3,12 @@
 Some module for Python
 ==================================
 
-<%=config[:name]%> is a Python module integrating classical machine
+<%=config[:underscored_name]%> is a Python module integrating classical machine
 things in the tightly-knit world of Python packages.
 
 See https://example.com for complete documentation.
 """
 
 # This patterns of defining the import can't be followed if you want
-# to invoke the project on the CLI via python -m <%=config[:name]%>.main
+# to invoke the project on the CLI via python -m <%=config[:underscored_name]%>.main
 # from .main import main

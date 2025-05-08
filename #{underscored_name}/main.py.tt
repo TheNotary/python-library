@@ -7,12 +7,12 @@ import os
 import sys
 
 # Local scripts
-from <%=config[:name]%>.config_helper import lookup_env_variables
-from <%=config[:name]%>.sayer import Sayer
+from <%=config[:underscored_name]%>.config_helper import lookup_env_variables
+from <%=config[:underscored_name]%>.sayer import Sayer
 
 
 # This is the main entrypoint of the project defined by setup.py
-# which will be invoked when the user runs `<%=config[:name]%>` from the command line
+# which will be invoked when the user runs `<%=config[:underscored_name]%>` from the command line
 # following installation.
 def main():
     username, password = lookup_env_variables()
