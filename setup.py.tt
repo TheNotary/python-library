@@ -13,7 +13,7 @@ setup(name='<%=config[:name]%>',
     ],
     entry_points={
         'console_scripts': [
-            '<%=config[:name]%>=<%=config[:name]%>:main',
+            '<%=config[:name]%>=<%=config[:underscored_name]%>:main',
         ],
     },
     test_suite='nose.collector',
